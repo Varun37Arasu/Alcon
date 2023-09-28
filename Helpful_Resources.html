@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/Helpful_Resources.css">
+    <link rel="stylesheet" href="./CSS/Navbar.css">
+    <title>Alcon - Helpful Resources</title>
+</head>
+
+<body>
+    <section class="navbar-wrapper">
+        <div class="nav-header">
+         <a class="logo-alcon"  >Alcon</a>
+            <a id="home">Home</a>
+        </div>
+        <div class="searchbar-wrapper">
+            <div class="searchbar">
+                <img src="./images/search-icon.png" />
+                <input type="text" name="" id="search-input" placeholder='"What are you looking for?"'>
+            </div>
+        </div>
+    </section>
+    <div id="blur-active"></div>
+    <div class="home-main-wrapper">
+        <section class="left-col">
+            <div onclick="redirectToPrevious()" class="back-circle">
+                <i class="fa-solid fa-arrow-right fa-rotate-180 fa-lg"></i>
+            </div>
+            <img id="left-col-logo" src="./images/logo Alcon.png" alt="" id="nav-logo">
+            <img id="left-col-start" onmouseenter="openBlur('#left-col-start', '.tag-1','#icon-1')"
+                onmouseleave="closeBlur('#left-col-start', '.tag-1','#icon-1')" src="./images/Left-nav-assests/start.png" alt="">
+            <img id="left-col-cat" onmouseenter="openBlur('#left-col-cat', '.tag-2','#icon-2')"
+                onmouseleave="closeBlur('#left-col-cat', '.tag-2','#icon-2')" src="./images/Left-nav-assests/catgeory.png" alt="">
+            <img id="left-col-more" onmouseenter="openBlur('#left-col-more', '.tag-3','#icon-3')"
+                onmouseleave="closeBlur('#left-col-more', '.tag-3','#icon-3')" src="./images/Left-nav-assests/more.png" alt="">
+            <div class="left-navbar-wrapper">
+                <div class="left-nav-logo-bg-wrapper">
+                    <img id="left-nav-logo-bg" src="./images/Left-nav-assests/logo-circular-bg.png" alt="" />
+                </div>
+                <div class="left-navbar-options-wrapper">
+                    <div class="left-navbar-options">
+                        <img id="icon-1" src="./images/Left-nav-assests/nav-1.png" alt="">
+                        <img id="icon-2" src="./images/Left-nav-assests/nav-2.png" alt="">
+                        <img id="icon-3" src="./images/Left-nav-assests/nav-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="left-nav-tag-wrapper">
+                <div class="left-nav-tag">
+                    <div  class="tag-1">
+                        <div>
+                            <p>New Hire Path:<br> <strong onmouseenter="openBlur('#left-col-start', '.tag-1','#icon-1')"
+                                onmouseleave="closeBlur('#left-col-start', '.tag-1','#icon-1')">Getting Started </strong></p>
+                            <!-- <span class="border"></span> -->
+                        </div>
+
+                    </div>
+                    <div class="tag-2">
+                        <p>CRD PL ONBOARDING <br>PLAYBOOK: <br> <strong onmouseenter="openBlur('#left-col-cat', '.tag-2','#icon-2')" onmouseleave="closeBlur('#left-col-cat', '.tag-2','#icon-2')">Categories</strong></p>
+                    </div>
+                    <div class="tag-3">
+                        <p><strong onmouseenter="openBlur('#left-col-more', '.tag-3','#icon-3')"
+                            onmouseleave="closeBlur('#left-col-more', '.tag-3','#icon-3')">Helpful <br> Resources</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div id="tag-1-info">
+                <span></span>
+                <div class="nav-link-data-wrapper">
+                    <div class="box with-triangle"></div>
+                    <div class="nav-link-data">
+                        <p>Access Instructions /QRGs</p>
+                        <p>List of SOP's</p>
+                        <p>Alcon Acronyms</p>
+                        <p>Onboarding Check List </p>
+                        <p>Contacts</p>
+                        <p>My First Series Videos</p>
+                        <p>On Boarding Buddy program</p>
+                    </div>
+                </div>
+            </div>
+            <div id="tag-2-info">
+                <span></span>
+                <div class="nav-link-data-wrapper">
+                    <div class="box with-triangle"></div>
+                    <div class="nav-link-data">
+                        <p>Quality and Regulatory Affairs</p>
+                        <p>CsTCTT </p>
+                        <p>EU MDR </p>
+                        <p>BD&L</p>
+                        <p>PubsPres</p>
+                        <p>Med Affairs-HEOR</p>
+                        <p>Pipeline Teams</p>
+                        <p>LCM</p>
+                        <p>Governance</p>
+                    </div>
+                </div>
+            </div>
+            <div id="tag-3-info">
+                <span></span>
+                <div class="nav-link-data-wrapper">
+                    <div class="box with-triangle"></div>
+                    <div class="nav-link-data">
+                        <p>Access Instructions /QRGs</p>
+                        <p>List of SOP's</p>
+                        <p>Alcon Acronyms</p>
+                        <p>Onboarding Check List </p>
+                        <p>Contacts</p>
+                        <p>My First Series Videos</p>
+                        <p>On Boarding Buddy program</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mid-col">
+            <div class="mid-col-wrapper">
+                <div class="cat-left">
+                    <div class="cat-1">
+                        <div class="cat-1-headline">
+                            <div onclick="openTab(event, '#tab1','.cat-1')">
+                                <a>Training </a>
+                                <div class="circle" style="border-color: #2567f5;">
+                                    <span class="down-arrow cat-1-data" style="border-color:#1F1F9F;"></span>
+                                </div>
+                            </div>
+                            <div style="border-color: #2567f5;" class="category-landing-icons">
+                                <img src="./images/helpfullink/training.png" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="cat-1-data-show" id="tab1">
+                            <div class="box with-triangle"></div>
+                            <div class="cat-active-wrapper container-wrapper-details">
+                                <div class="cat-active">
+                                    <div>
+                                        <a style="pointer-events: none;"></a>
+                                        <a  target="_blank"="https://Alconlearningacademy.com" target="_blank">ALA (Alcon Learning Academy)</a>
+                                        <a href="http://hp9sl3fr4e.search.serialssolutions.com/ejp/?libHash=HP9SL3FR4E#/?language=en-US&titleType=ALL" target="_blank">AKC</a>
+                                        <a href="https://alcon.service-now.com/alconservicemanagement?id=kb_article&sys_id=3983d94fdbca0dd018cda90b8a96196c&spa=1" target="_blank">How to use AKC</a>
+                                        <a href="" target="_blank">AEA</a>
+                                        <a href="https://alcon365.sharepoint.com/sites/KOLManagement" target="_blank">KOL Engagement and Consulting</a>
+                                        <a href="https://www.alconrecogneyes.com/#/landingPage" target="_blank">Recogneyes</a>
+                                        <a href="https://alcon365.sharepoint.com/sites/InSight/SitePages/363/MVP_Playbook_Version_2/MVP%20GEN2%20Final/MVP_Playbook_M3_GEN2_Program_Rev_P2L.aspx" target="_blank">Info on Rev training</a>
+                                        <a href="https://www.alconscience.com/" target="_blank">Alcon Product Training</a>
+                                        <a style="pointer-events: none;border-bottom: none;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-2">
+                        <div class="cat-2-headline">
+                            <div onclick="openTab(event, '#tab2','.cat-2')">
+                                <a>Support Tools</a>
+                                <div class="circle" style="border-color: #00CCFF;">
+                                    <span class="down-arrow cat-1-data" style="border-color:#00CCFF;"></span>
+                                </div>
+                            </div>
+                            <div style="border-color:  #00CCFF;" class="category-landing-icons">
+                                <img src="./images/helpfullink/support.png" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="cat-2-data-show" id="tab2">
+                            <div class="box with-triangle"></div>
+                            <div class="cat-active-wrapper container-wrapper-details">
+                                <div class="cat-active">
+                                    <div>
+                                        <a style="pointer-events: none;"></a>
+                                        <a href="https://alcon365.sharepoint.com/sites/InSight/SitePages/140/Timecard-User.aspx" target="_blank">Time Card</a>
+                                        <a href="https://alcon365.sharepoint.com/sites/InSight/289DocLib/Forms/AllItems.aspx?id=%2Fsites%2FInSight%2F289DocLib%2FFRA%20Operations%2FGPO%2FT%26E%2FGlobal%20T%26E%20Policy%2FAlcon%20Global%20Travel%20%20Expense%20and%20Corporate%20Card%20Policy%202023%2Epdf&parent=%2Fsites%2FInSight%2F289DocLib%2FFRA%20Operations%2FGPO%2FT%26E%2FGlobal%20T%26E%20Policy" target="_blank">T&E Policies</a>
+                                        <a href="https://wd5.myworkday.com/alcon/d/home.htmld" target="_blank">Workday</a>
+                                        <a style="pointer-events: none;border-bottom: none;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-3">
+                        <div class="cat-3-headline">
+                            <div>
+                                <a href="https://alcon.service-now.com/fpportal?id=index_fp" target="_blank" style="cursor: pointer;">Finance</a>
+                            </div>
+                            <div style="border-color:  #2F89BC;" class="category-landing-icons">
+                                <img style="height: 40%; width: 54%;" src="./images/helpfullink/finance.png" alt=""
+                                    srcset="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-right">
+                    <div class="cat-5">
+                        <div class="cat-5-headline">
+                            <div style="border-color:  #1F1F9F;" class="category-landing-icons">
+                                <img src="./images/helpfullink/Alcon-Acro.png" alt="" srcset="">
+                            </div>
+                            <div class="cat-5-text">
+                                <a href="https://alcon365.sharepoint.com/:b:/s/CRDPLOn-BoardingPlaybook/EXQRCE_x-9pGmFxWvaz4otYBjlUhY041gjwpn21t18ygWw?email=aritra%40kandha.co&e=4%3aOiJpHk&fromShare=true&at=9" style="cursor: pointer;">Alcon <br> Acronyms</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cat-6">
+                        <div class="cat-6-headline">
+                            <div style="border-color:  #0052FF;" class="category-landing-icons">
+                                <img src="./images/helpfullink/it_support.png" alt="" srcset="">
+                            </div>
+                            <div class="cat-6-text" onclick="openTab(event, '#tab6','.cat-6')">
+                                <a>IT Support</a>
+                                <div class="circle" style="border-color: #2567f5;">
+                                    <span class="down-arrow" style="border-color:#1F1F9F;"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cat-6-data-show" id="tab6">
+                            <div class="box with-triangle"></div>
+                            <div class="cat-active-wrapper container-wrapper-details">
+                                <div class="cat-active">
+                                    <div>
+                                        <a style="pointer-events: none;"></a>
+                                        <a href="https://chat.alcon.com/" target="_blank">IT Chat support</a>
+                                        <a href="https://alcon.service-now.com/alconservicemanagement?id=index_itsp" target="_blank">IT Now</a>
+                                        <a href="https://alcon.service-now.com/alconservicemanagement?id=index_itsp" target="_blank">saviynt / IT Tickets</a>
+                                        <a style="pointer-events: none;border-bottom: none;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-7">
+                        <div class="cat-7-headline">
+                            <div style="border-color:  #5FBAD1;;" class="category-landing-icons">
+                                <img src="./images/helpfullink/hr_help.png" alt="" srcset="">
+                            </div>
+                            <div class="cat-7-text">
+                                <a href="https://alcon.service-now.com/hrportal?id=kb_article&sys_id=c04a94dadbeb6550fc47037dd39619bb&spa=1" target="_blank" target="_blank" style="cursor: pointer;">HR Help</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-8">
+                        <div class="cat-8-headline">
+                            <div style="border-color: #0400E1;" class="category-landing-icons">
+                                <img src="./images/helpfullink/QRG-RG.png" alt="" srcset="">
+                            </div>
+                            <div class="cat-8-text" onclick="openTab(event, '#tab8','.cat-8')">
+                                <a>QRG-Quick <br> Reference Guides</a>
+                                <div class="circle" style="border-color: #0400E1;">
+                                    <span class="down-arrow" style="border-color:#0400E1;"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cat-8-data-show" id="tab8">
+                            <div class="box with-triangle"></div>
+                            <div class="cat-active-wrapper container-wrapper-details">
+                                <div class="cat-active">
+                                    <div>
+                                        <a style="pointer-events: none;"></a>
+                                        <a href="https://alcon365.sharepoint.com/sites/InSight/386DocLib/Forms/AllItems.aspx?id=%2Fsites%2FInSight%2F386DocLib%2FQuick%20Reference%20Guide%2Epdf&parent=%2Fsites%2FInSight%2F386DocLib" target="_blank">Elevate</a>
+                                        <a href="https://alcon365.sharepoint.com/sites/InSight/119DocLib/Forms/AllItems.aspx?id=%2Fsites%2FInSight%2F119DocLib%2FVeeva%20Resources%2FVeeva%20ClinOps%20Training%20Quick%20Reference%2FQRG%5FCreate%20Documents%5FUpload%20Documents%20to%20Expected%20Documents%2Epdf&parent=%2Fsites%2FInSight%2F119DocLib%2FVeeva%20Resources%2FVeeva%20ClinOps%20Training%20Quick%20Reference" target="_blank">Veeva QRG Create Documents-Upload docs to expected Docs</a>
+                                        <a href="https://alcon365.sharepoint.com/sites/AlconRAasia/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FAlconRAasia%2FShared%20Documents%2FDemo%2FProcesses%20and%20Applications%2FVEEVA%20Vault%20RIM%2FArchive%2FVEEVA%20Vault%20RIM%20Quick%20Reference%20guide%2Epdf&parent=%2Fsites%2FAlconRAasia%2FShared%20Documents%2FDemo%2FProcesses%20and%20Applications%2FVEEVA%20Vault%20RIM%2FArchive" target="_blank">VEEVA QRG Vault RIM</a>
+                                        <a href="https://alcon365.sharepoint.com/sites/InSight/119DocLib/Forms/AllItems.aspx?id=%2Fsites%2FInSight%2F119DocLib%2FVeeva%20Resources%2FVeeva%20ClinOps%20Training%20Quick%20Reference%2FQRG%5FDocument%20from%20Template%20and%20Create%20a%20Draft%20Document%2Epdf&parent=%2Fsites%2FInSight%2F119DocLib%2FVeeva%20Resources%2FVeeva%20ClinOps%20Training%20Quick%20Reference" target="_blank">Veeva QRG-Documents from template & Create Draft of a Documet: </a>
+                                        <a href="https://alcon365.sharepoint.com/sites/InSight/119DocLib/Forms/AllItems.aspx?id=%2Fsites%2FInSight%2F119DocLib%2FVeeva%20Resources%2FVeeva%20ClinOps%20Training%20Quick%20Reference%2FQRG%5FCreate%20Documents%5FUpload%20Documents%20to%20the%20Documents%20Section%2Epdf&parent=%2Fsites%2FInSight%2F119DocLib%2FVeeva%20Resources%2FVeeva%20ClinOps%20Training%20Quick%20Reference" target="_blank">Veeva QRG-Create Document - Upload documents to the documents
+                                            section</a>
+                                        <a style="pointer-events: none;border-bottom: none;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="right-col">
+            <div class="choice-details">
+                <p class="feedback"><img src="./images/files.png" alt="" srcset="">Feedback</p>
+                <span></span>
+                <p class="quick-links" onmouseenter="rightColEnter('quick-links','.quick-link-wrapper')" ><img src="./images/QuickLink.png" alt="" srcset="">Quick Links</p>
+            </div>
+            <div onmouseleave="rightColLeave('quick-links','.quick-link-wrapper')"  class="quick-link-wrapper">
+                <div class="box with-triangle"></div>
+                <div class="quick-link-data">
+                    <a href="https://alcon365.sharepoint.com/sites/InSight/SitePages/119/CR%26D_Home.aspx" target="_blank">CRD insight Page</a>
+                    <a href="https://alcon365.sharepoint.com/sites/InSight/SitePages/119/Clinical%20RD%20Onboarding.aspx" target="_blank">CRD Onboarding site</a>
+                    <a href="https://alcon365.sharepoint.com/sites/InSight/SitePages/161/R%26DApplications.aspx" target="_blank">R&D InSight Page</a>
+                    <a href="https://alcon365.sharepoint.com/sites/InSight/SitePages/363/MVP_Playbook_Version_2/MVP%20GEN2%20Final/MVP_Playbook_M3_GEN2_Home_min.aspx" target="_blank">MVP Playbook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./JS/Helpful_Resources.js"></script>
+<script src="./JS/Navbar.js"></script>
+
+</html> 

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="./CSS/Category_Landing.css" rel="stylesheet" />
+    <link href="./CSS/Navbar.css" rel="stylesheet" />
+    <title>Alcon | Category</title>
+</head>
+
+<body>
+    <section class="navbar-wrapper">
+        <div class="nav-header">
+            <a class="logo-alcon">Alcon</a>
+            <a id="home">Home</a>
+        </div>
+        <div class="searchbar-wrapper">
+            <div class="searchbar">
+                <img src="./images/search-icon.png" />
+                <input type="text" name="" id="search-input" placeholder='"What are you looking for?"'>
+            </div>
+        </div>
+    </section>
+    <div id="blur-active"></div>
+
+    </div>
+    <div class="home-main-wrapper">
+        <section class="left-col">
+            <div onclick="redirectToPrevious()" class="back-circle">
+                <i class="fa-solid fa-arrow-right fa-rotate-180 fa-lg"></i>
+            </div>
+            <img id="left-col-logo" src="./images/logo Alcon.png" alt="" id="nav-logo">
+            <img id="left-col-start" onmouseenter="openBlur('#left-col-start', '.tag-1','#icon-1')"
+                onmouseleave="closeBlur('#left-col-start', '.tag-1','#icon-1')" src="./images/Left-nav-assests/start.png" alt="">
+            <img id="left-col-cat" onmouseenter="openBlur('#left-col-cat', '.tag-2','#icon-2')"
+                onmouseleave="closeBlur('#left-col-cat', '.tag-2','#icon-2')" src="./images/Left-nav-assests/catgeory.png" alt="">
+            <img id="left-col-more" onmouseenter="openBlur('#left-col-more', '.tag-3','#icon-3')"
+                onmouseleave="closeBlur('#left-col-more', '.tag-3','#icon-3')" src="./images/Left-nav-assests/more.png" alt="">
+            <div class="left-navbar-wrapper">
+                <div class="left-nav-logo-bg-wrapper">
+                    <img id="left-nav-logo-bg" src="./images/Left-nav-assests/logo-circular-bg.png" alt="" />
+                </div>
+                <div class="left-navbar-options-wrapper">
+                    <div class="left-navbar-options">
+                        <img id="icon-1" src="./images/Left-nav-assests/nav-1.png" alt="">
+                        <img id="icon-2" src="./images/Left-nav-assests/nav-2.png" alt="">
+                        <img id="icon-3" src="./images/Left-nav-assests/nav-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="left-nav-tag-wrapper">
+                <div class="left-nav-tag">
+                    <div  class="tag-1">
+                        <div>
+                            <p>New Hire Path:<br> <strong onmouseenter="openBlur('#left-col-start', '.tag-1','#icon-1')"
+                                onmouseleave="closeBlur('#left-col-start', '.tag-1','#icon-1')">Getting Started </strong></p>
+                            <!-- <span class="border"></span> -->
+                        </div>
+
+                    </div>
+                    <div class="tag-2">
+                        <p>CRD PL ONBOARDING <br>PLAYBOOK: <br> <strong onmouseenter="openBlur('#left-col-cat', '.tag-2','#icon-2')" onmouseleave="closeBlur('#left-col-cat', '.tag-2','#icon-2')">Categories</strong></p>
+                    </div>
+                    <div class="tag-3">
+                        <p><strong onmouseenter="openBlur('#left-col-more', '.tag-3','#icon-3')"
+                            onmouseleave="closeBlur('#left-col-more', '.tag-3','#icon-3')">Helpful <br> Resources</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div id="tag-1-info">
+                <span></span>
+                <div class="nav-link-data-wrapper">
+                    <div class="box with-triangle"></div>
+                    <div class="nav-link-data">
+                        <p>Access Instructions /QRGs</p>
+                        <p>List of SOP's</p>
+                        <p>Alcon Acronyms</p>
+                        <p>Onboarding Check List </p>
+                        <p>Contacts</p>
+                        <p>My First Series Videos</p>
+                        <p>On Boarding Buddy program</p>
+                    </div>
+                </div>
+            </div>
+            <div id="tag-2-info">
+                <span></span>
+                <div class="nav-link-data-wrapper">
+                    <div class="box with-triangle"></div>
+                    <div class="nav-link-data">
+                        <p>Quality and Regulatory Affairs</p>
+                        <p>CsTCTT </p>
+                        <p>EU MDR </p>
+                        <p>BD&L</p>
+                        <p>PubsPres</p>
+                        <p>Med Affairs-HEOR</p>
+                        <p>Pipeline Teams</p>
+                        <p>LCM</p>
+                        <p>Governance</p>
+                    </div>
+                </div>
+            </div>
+            <div id="tag-3-info">
+                <span></span>
+                <div class="nav-link-data-wrapper">
+                    <div class="box with-triangle"></div>
+                    <div class="nav-link-data">
+                        <p>Access Instructions /QRGs</p>
+                        <p>List of SOP's</p>
+                        <p>Alcon Acronyms</p>
+                        <p>Onboarding Check List </p>
+                        <p>Contacts</p>
+                        <p>My First Series Videos</p>
+                        <p>On Boarding Buddy program</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mid-col">
+            <div class="mid-col-wrapper">
+                <div class="cat-left">
+                    <div onmouseenter="categoryHoverEnter('cat-1')" onmouseleave="categoryHoverLeave('cat-1')"
+                        class="cat-1">
+                        <div class="cat-1-headline">
+                            <div>
+                                <a href="./Category.html?cat=CsTCTT">CsTCTT</a>
+                            </div>
+                            <div style="border-color: #2567f5;" class="category-landing-icons">
+                                <img src="./images/category/cstctt.png" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="info" style="color:  #2567f5;;">
+                            <div>
+                                <p class="info-headline" style="border-color: #2567f5; ;">CsTCTT</p>
+                            </div>
+                            Global Medical affairs is the trusted scientific partner for
+                            internal businesses and HCP's providing robust data on product safety and performance,
+                            including
+                            patient outcomes and real world evidence.
+                            <br><br>
+                            <div>
+                                <strong>Global HEOR :</strong> Health economics is the application of economic
+                                principles to address questions on the efficiency, effectiveness and value of medical
+                                technology.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cat-2">
+                        <div class="cat-2-headline">
+                            <div>
+                                <a href="./Category.html?cat=BDL" >BD&L</a>
+                            </div>
+                            <div style="border-color:  #00CCFF;" class="category-landing-icons">
+                                <img src="./images/category/BDL.png" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="info" style="color: #00CCFF;">
+                            <div>
+                                <p class="info-headline" style="border-color:#2F89BC ;">Med Affairs-HEOR</p>
+                            </div>
+                            Global Medical affairs is the trusted scientific
+                            partner for internal businesses and HCP's providing robust data on product safety and
+                            performance, including patient outcomes and real world evidence.
+                            <br><br>
+                            <div>
+                                <strong>Global HEOR :</strong> Health economics is the application of economic
+                                principles to address questions on the efficiency, effectiveness and value of medical
+                                technology.
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cat-3" onmouseenter="categoryHoverEnter('cat-3')"
+                        onmouseleave="categoryHoverLeave('cat-3')">
+                        <div class="cat-3-headline">
+                            <div>
+                                <a href="./Category.html?cat=MAH" >Med Affairs-HEOR</a>
+                            </div>
+                            <div style="border-color:  #2F89BC;" class="category-landing-icons">
+                                <img src="images/category/medical.png" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="info" style="color: #2F89BC;">
+                            <div>
+                                <p class="info-headline" style="border-color:#2F89BC ;">Med Affairs-HEOR</p>
+                            </div>
+                            Global Medical affairs is the trusted scientific
+                            partner for internal businesses and HCP's providing robust data on product safety and
+                            performance, including patient outcomes and real world evidence.
+                            <br><br>
+                            <div>
+                                <strong>Global HEOR :</strong> Health economics is the application of economic
+                                principles to address questions on the efficiency, effectiveness and value of medical
+                                technology.
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="cat-4">
+                        <div class="cat-4-headline">
+                            <div>
+                                <a href="./Category.html?cat=LCM" >LCM</a>
+                            </div>
+                            <div style="border-color: #0197F6;" class="category-landing-icons">
+                                <img src="images/category/LCM.png" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div style="background: #0197F6;" class="info"></div>
+                    </div>
+                </div>
+                <div class="cat-right">
+                    <div onmouseenter="categoryHoverEnter('cat-5')" onmouseleave="categoryHoverLeave('cat-5')"
+                        class="cat-5">
+                        <div class="cat-5-headline">
+                            <div style="border-color:  #1F1F9F;;" class="category-landing-icons">
+                                <img src="./images/category/QRA.png" alt="" srcset="">
+                            </div>
+                            <div class="cat-5-text">
+                                <a href="./Category.html?cat=QRA" >&nbsp;&nbsp;&nbsp;&nbsp; Quality
+                                    and<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Regulatory Affairs</a>
+                            </div>
+                        </div>
+                        <div class="info" style="color: #1F1F9F;">
+                            <div>
+                                <p class="info-headline" style="border-color:#1F1F9F;">Quality and Regulatory Affairs
+                                </p>
+                            </div>QRA function is to develop the strategy for advocacy and
+                            implementation of new/revised regulatory requirements; establish the roadmap for life cycle
+                            management of products.
+                            <br><br>
+
+                        </div>
+                    </div>
+                    <div onmouseenter="categoryHoverEnter('cat-6')" onmouseleave="categoryHoverLeave('cat-6')"
+                        class="cat-6">
+                        <div class="cat-6-headline">
+                            <div style="border-color:  #0052FF;" class="category-landing-icons">
+                                <img src="./images/category/eumdr.png" alt="" srcset="">
+                            </div>
+                            <div class="cat-6-text">
+                                <a href="./Category.html?cat=eumdr" >EU MDR</a>
+                            </div>
+                        </div>
+                        <div class="info" style="color:#0052FF;">
+                            <div>
+                                <p class="info-headline" style="border-color:#0052FF;">EU MDR</p>
+                            </div>European Union Medical Device Regulations, known as EUMDR replaces
+                            the current EU MDD (Medical Devices Directives) that regulates placing medical devices to
+                            the EU
+                            Market. All medical device manufacturers including Alcon must comply with EU MDR
+                            requirements to
+                            continue to CE mark and sell medical devices in the European Union.
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="cat-7">
+                        <div class="cat-7-headline">
+                            <div style="border-color:  #5FBAD1;;" class="category-landing-icons">
+                                <img src="./images/category/pubpress.png" alt="" srcset="">
+                            </div>
+                            <div class="cat-7-text">
+                                <a href="./Category.html?cat=pubsPress">PubsPress</a>
+                            </div>
+                        </div>
+                        <div style="background: #5FBAD1;" class="info"></div>
+                    </div>
+                    <div onmouseenter="categoryHoverEnter('cat-8')" onmouseleave="categoryHoverLeave('cat-8')"
+                        class="cat-8">
+                        <div class="cat-8-headline">
+                            <div style="border-color: #0400E1;" class="category-landing-icons">
+                                <img src="./images/category/pipeline.png" alt="" srcset="">
+                            </div>
+                            <div class="cat-8-text">
+                                <a href="./Category.html?cat=pipeline" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pipeline
+                                    Teams</a>
+                            </div>
+                        </div>
+                        <div class="info" style="color:#0400E1;">
+                            <div>
+                                <p class="info-headline" style="border-color:#0400E1;">Pipeline Teams</p>
+                            </div>Introduction to R&D technology platforms, the concept of the
+                            core
+                            team, supporting product development, and the Alcon stage-gate model.
+                            <p> PL Role on core team and clinical development planning.</p>
+                            <br><br>
+                        </div>
+                    </div>
+                    <div class="cat-9">
+                        <div class="cat-9-headline">
+                            <div style="border-color: #5FBAD1;" class="category-landing-icons">
+                                <img src="./images/category/governace.png" alt="" srcset="">
+                            </div>
+                            <div class="cat-9-text">
+                                <a
+                                    href="./Category.html?cat=governance" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Governance</a>
+                            </div>
+                        </div>
+                        <div style="background: #5FBAD1;" class="info"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="right-col">
+            <div class="choice-details">
+                <p class="feedback"><img src="./images/files.png" alt="" srcset="">Feedback</p>
+                <span></span>
+                <p class="quick-links" onmouseenter="rightColEnter('quick-links','.quick-link-wrapper')"><img
+                        src="./images/QuickLink.png" alt="" srcset="">Quick Links</p>
+            </div>
+            <div onmouseleave="rightColLeave('quick-links','.quick-link-wrapper')" class="quick-link-wrapper">
+                <div class="box with-triangle"></div>
+                <div class="quick-link-data">
+                    <a href="" target="_blank">CRD insight Page</a>
+                    <a href="" target="_blank">CRD Onboarding site</a>
+                    <a href="" target="_blank">R&D InSight Page</a>
+                    <a href="" target="_blank">MVP Playbook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/Navbar.js"></script>.
+    <script src="./JS/Category_Landing.js"></script>
+
+</body>
+
+</html>

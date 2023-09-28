@@ -1,0 +1,197 @@
+body {
+    /* overflow:hidden; */
+    background-image: url("../images/getting-started/geting-started-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 120vh;
+    margin-top: 20px;
+}
+
+.home-main-wrapper {
+    grid-template-columns: 30% 60% 10%;
+}
+
+.left-col {
+    background: none;
+}
+.left-navbar-options{
+    height: 92vh;
+}
+#blur-active {
+    height: 115vh;
+    top: 3.6rem;
+}
+.tag-1{
+    left: -0.2rem;
+}
+.home-main-wrapper .mid-col section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.home-main-wrapper .mid-col .top-element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(-10%);
+    position: relative;
+    top: -60px;
+}
+
+.home-main-wrapper .mid-col .top-element-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-main-wrapper .mid-col .top-element-logo img {
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.top-element-logo h1 {
+    margin-left: 1.4rem;
+    font-size: 30px;
+    font-weight: 900;
+    color: black;
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    text-align: right;
+    padding-bottom: 4px;
+}
+
+.bottom-element {
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    background: url("/images/New_images/monitor.png");
+    background-size: contain;
+}
+
+.bottom-element img {
+    position: absolute;
+    top: -4rem;
+    height: 100%;
+    width: 80%;
+}
+
+.bottom-element .bottom-element-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.bottom-element #screen {
+    top: 0.8rem;
+    transform: translateX(10%);
+    position: absolute;
+    cursor: pointer;
+    width: 66.2%;
+    height: 11.8rem;
+    display: none;
+}
+.bottom-element h1 {
+    position: absolute;
+    background: white;
+    text-align: left;
+    height: 2.6rem;
+    width: 66.2%;
+    transform: translateX(10%);
+    top: 11.8rem;
+    margin: 0;
+    
+}
+
+.bottom-element .sub-videos {
+    /* display: flex;
+    justify-content: space-around; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 66.2%;
+    height: 20%;
+    position: absolute;
+    top: 14rem;
+    transform: translateX(10%);
+    background: white;
+}
+
+.bottom-element .sub-videos video {
+    width: 98%;
+    /* height: 15rem; */
+    cursor: pointer;
+}
+@media (max-width:1286px) {
+    .home-main-wrapper {
+        grid-template-columns: 25% 65% 10%;
+    }
+
+}
+@media screen and (min-height:749px) {
+
+    .bottom-element img{
+        height: 96%;
+    }
+}
+
+
+
+.bottom-element .bottom-element-wrapper {
+    position: relative;
+    height: 77%;
+    width: 73%;
+    background-color: rgba(255, 255, 255, 0);
+    /* top: -152px; */
+    /* width: 96%; */
+}
+
+.bottom-element {
+    position: relative;
+    top: -10%;
+    height: 70vh;
+    width: 100%;
+    background: url("/images/New_images/monitor.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+}
+
+.bottom-element img {
+    display: none;
+    position: absolute;
+    top: -4rem;
+    height: 100%;
+    width: 80%;
+}
+
+.bottom-element .sub-videos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    grid-row-gap: 20px;
+    width: 80%;
+    padding: 0px;
+    /* height: 42%; */
+    position: absolute;
+    left: 15px;
+    top: 1.5rem;
+    transform: translateX(10%);
+    background: white;
+}
+
+.video_titles{
+    /* background-color: aqua; */
+    margin: 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.sub-videos{
+    height: 100%;
+    /* height: fit-content; */
+}

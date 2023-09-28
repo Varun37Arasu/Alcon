@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="./CSS/Category.css" rel="stylesheet" />
+    <link href="./CSS/Navbar.css" rel="stylesheet" />
+    <title>Alcon | Category</title>
+</head>
+
+<body>
+    <section class="navbar-wrapper">
+        <div class="nav-header">
+            <a class="logo-alcon">Alcon</a>
+            <a id="home">Home</a>
+        </div>
+        <div class="searchbar-wrapper">
+            <div class="searchbar">
+                <img src="./images/search-icon.png" />
+                <input type="text" name="" id="search-input" placeholder='"What are you looking for?"'>
+            </div>
+        </div>
+    </section>
+    <div id="blur-active"></div>
+    </div>
+    <div class="home-main-wrapper">
+        <section class="left-col">
+            <div onclick="redirectToPrevious()" class="back-circle">
+                <i class="fa-solid fa-arrow-right fa-rotate-180 fa-lg"></i>
+            </div>
+            <img id="left-col-logo" src="./images/logo Alcon.png" alt="" id="nav-logo">
+            <img id="left-col-start" onmouseenter="openBlur('#left-col-start', '.tag-1','#icon-1')" onmouseleave="closeBlur('#left-col-start', '.tag-1','#icon-1')" src="./images/Left-nav-assests/start.png" alt="">
+            <img id="left-col-cat" onmouseenter="openBlur('#left-col-cat', '.tag-2','#icon-2')" onmouseleave="closeBlur('#left-col-cat', '.tag-2','#icon-2')" src="./images/Left-nav-assests/catgeory.png" alt="">
+            <img id="left-col-more" onmouseenter="openBlur('#left-col-more', '.tag-3','#icon-3')" onmouseleave="closeBlur('#left-col-more', '.tag-3','#icon-3')" src="./images/Left-nav-assests/more.png" alt="">
+            <div class="left-navbar-wrapper">
+                <div class="left-nav-logo-bg-wrapper">
+                    <img id="left-nav-logo-bg" src="./images/Left-nav-assests/logo-circular-bg.png" alt="" />
+                </div>
+                <div class="left-navbar-options-wrapper">
+                    <div class="left-navbar-options">
+                        <img id="icon-1" src="./images/Left-nav-assests/nav-1.png" alt="">
+                        <img id="icon-2" src="./images/Left-nav-assests/nav-2.png" alt="">
+                        <img id="icon-3" src="./images/Left-nav-assests/nav-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="left-nav-tag-wrapper">
+                <div class="left-nav-tag">
+                    <div class="tag-1">
+                        <div>
+                            <p>New Hire Path:<br> <strong onmouseenter="openBlur('#left-col-start', '.tag-1','#icon-1')" onmouseleave="closeBlur('#left-col-start', '.tag-1','#icon-1')">Getting Started
+                                </strong></p>
+                            <!-- <span class="border"></span> -->
+                        </div>
+
+                    </div>
+                    <div class="tag-2">
+                        <p>CRD PL ONBOARDING <br>PLAYBOOK: <br> <strong onmouseenter="openBlur('#left-col-cat', '.tag-2','#icon-2')" onmouseleave="closeBlur('#left-col-cat', '.tag-2','#icon-2')">Categories</strong></p>
+                    </div>
+                    <div class="tag-3">
+                        <p><strong onmouseenter="openBlur('#left-col-more', '.tag-3','#icon-3')" onmouseleave="closeBlur('#left-col-more', '.tag-3','#icon-3')">Helpful <br>
+                                Resources</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div id="tag-1-info">
+                <span></span>
+                <div class="nav-link-data-wrapper">
+                    <div class="box with-triangle"></div>
+                    <div class="nav-link-data">
+                        <p>Access Instructions /QRGs</p>
+                        <p>List of SOP's</p>
+                        <p>Alcon Acronyms</p>
+                        <p>Onboarding Check List </p>
+                        <p>Contacts</p>
+                        <p>My First Series Videos</p>
+                        <p>On Boarding Buddy program</p>
+                    </div>
+                </div>
+            </div>
+            <div id="tag-2-info">
+                <span></span>
+                <div class="nav-link-data-wrapper">
+                    <div class="box with-triangle"></div>
+                    <div class="nav-link-data">
+                        <p>Quality and Regulatory Affairs</p>
+                        <p>CsTCTT </p>
+                        <p>EU MDR </p>
+                        <p>BD&L</p>
+                        <p>PubsPres</p>
+                        <p>Med Affairs-HEOR</p>
+                        <p>Pipeline Teams</p>
+                        <p>LCM</p>
+                        <p>Governance</p>
+                    </div>
+                </div>
+            </div>
+            <div id="tag-3-info">
+                <span></span>
+                <div class="nav-link-data-wrapper">
+                    <div class="box with-triangle"></div>
+                    <div class="nav-link-data">
+                        <p>Access Instructions /QRGs</p>
+                        <p>List of SOP's</p>
+                        <p>Alcon Acronyms</p>
+                        <p>Onboarding Check List </p>
+                        <p>Contacts</p>
+                        <p>My First Series Videos</p>
+                        <p>On Boarding Buddy program</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mid-col">
+            <div class="category" id="QRA">
+                <div class="mid-col-header">
+                    <h3 class="mid-col-header-tag">Quality and Regulatory Affairs</h3>
+                    <p class="mid-col-header-info"> QRA function is to develop the strategy for advocacy and implementation of new/revised regulatory requirements; establish the roadmap for life cycle management of products.
+                    </p>
+                    <!-- <span>To learn more about your role in the function and get a brief summary of the doc content,
+                        start by clicking on the Category brief doc.</span> -->
+                    <strong>Review the category brief below and click on the respective titles to access the relevant
+                        documents</strong>
+                </div>
+                <div class="tab-container-wrapper">
+                    <div class="tab-container">
+                        <div>
+                            <button class="tab-button-tag" value="QRA">
+                                <img class="docx-img" src="./images/CATEGORY_DOX.png" />
+                                <p>Category <br> Brief</p>
+                            </button>
+                        </div>
+                        <div onclick="openCatTab(event, '#QRA','#tab1')">
+                            <button class="tab-button" value="QRA">
+                                <img class="docx-img" src="./images/CATEGORY_DOX.png" />
+                                <h5>Regulations and Guidelines</h5>
+                            </button>
+                            <div class="circle">
+                                <span class="down-arrow"></span>
+                            </div>
+                        </div>
+                        <div onclick="openCatTab(event, '#QRA','#tab2')">
+                            <button class="tab-button" value="QRA">
+                                <img src="./images/CATEGORY_RESOURCE.png">
+                                <h5>Resources</h5>
+                            </button>
+                            <div class="circle" style="border-color: #2567f5;">
+                                <span class="down-arrow"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-data-show" id="tab1">
+                    <div class="box with-triangle"></div>
+                    <div class="cat-active-wrapper container-wrapper-details">
+                        <div class="cat-active">
+                            <div>
+                                <a style="pointer-events: none;"></a>
+                                <a href="https://alcon365.sharepoint.com/:p:/r/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/General/SOPs/V-CLN-0031947%20Clinical%20Trial%20Lifecycle%20Roadmap.pptx?d=waaceba7273994bc18935e75f94c2b57b&csf=1&web=1&e=IibeZI" target="_blank">ICH E6 GCP</a>
+                                <a href="https://www.ema.europa.eu/en/ich-e8-general-considerations-clinical-studies-scientific-guideline" target="_blank">ICH E8 Clinical Study Regulations</a>
+                                <a href="https://alcon365.sharepoint.com/:p:/r/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/General/SOPs/V-CLN-0031947%20Clinical%20Trial%20Lifecycle%20Roadmap.pptx?d=waaceba7273994bc18935e75f94c2b57b&csf=1&web=1&e=IibeZI" target="_blank">ISO 13485 Quality Management Systems / 21 CFR 820</a>
+                                <a href="https://alcon365.sharepoint.com/:p:/r/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/General/SOPs/V-CLN-0031947%20Clinical%20Trial%20Lifecycle%20Roadmap.pptx?d=waaceba7273994bc18935e75f94c2b57b&csf=1&web=1&e=IibeZI" target="_blank">ISO 14155 GCP</a>
+                                <a href="" target="_blank">ISO 14971 Risk Management</a>
+                                <a href="https://alcon365.sharepoint.com/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FISO%20ICH%20CFR%20documents%2FICH%20E6%20GCP%2019400977fnl%5FPRA%20update%5F11%2E4%2E22%2Epdf&parent=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FISO%20ICH%20CFR%20documents" target="_blank">US FDA 21 CFR 314</a>
+                                <a href="https://alcon365.sharepoint.com/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs%2FV%2DQMS%2D0081412%20v1%20Evaluation%20and%20Support%20of%20Alcon%2DSponsored%20Research%20Agreements%2Epdf&parent=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs" target="_blank">US FDA 21 CFR 812</a>
+                                <a style="pointer-events: none;border-bottom: none;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-data-show" id="tab2">
+                    <div class="box with-triangle"></div>
+                    <div class="cat-active-wrapper container-wrapper-details">
+                        <div class="cat-active">
+                            <div>
+                                <a style="pointer-events: none;"></a>
+                                <a href="https://alcon365.sharepoint.com/sites/InSight/266DocLib1/Forms/AllItems.aspx?id=%2Fsites%2FInSight%2F266DocLib1%2FCore%20Standards%2FAlcon%20Core%20Standards%20List%20V33%2E0%2Epdf&parent=%2Fsites%2FInSight%2F266DocLib1%2FCore%20Standards" target="_blank">Alcon Core Standards </a>
+                                <a href="https://alcon365.sharepoint.com/sites/InSight/SitePages/266/External%20Reference%20Resources.aspx" target="_blank">Alcon's External References Resources InSight <br>page (BSI & Tarius)</a>
+                                <a style="pointer-events: none;border-bottom: none;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category" id="CsTCTT">
+                <div class="mid-col-header">
+                    <h3 class="mid-col-header-tag">CsTCTT</h3>
+                    <p class="mid-col-header-info"> Global Medical affairs is the trusted scientific partner for internal businesses and HCP's providing robust data on product safety and performance, including patient outcomes and real world evidence.
+                    </p>
+
+
+                    <!-- <span id="heor-text">
+                        <span><b>Show More</b></span></span>
+                    <button id="more-button" onclick="toggleText()">More</button>
+                    </span> -->
+                    <div>
+                        <strong>Global HEOR :</strong>
+                        <input type="checkbox">
+                        <span class="shortText"> Health economics is the application of economic principles to address
+                            questions on the efficiency,...
+                            <span><b style="cursor: pointer !important;">More</b>
+                            </span>
+                        </span>
+                        <span class="FullText">Health economics is the application of economic principles to address
+                            questions on the efficiency<span>
+                                <b>...less</b>
+                            </span>
+                        </span>
+                    </div>
+                    <br> <br>
+                    <strong>Review the category brief below and click on the respective titles to access the relevant
+                        documents</strong>
+
+                </div>
+                <div class="tab-container-wrapper">
+                    <div class="tab-container">
+                        <div>
+                            <button class="tab-button-tag" value="QRA">
+                                <img class="docx-img" src="./images/CATEGORY_DOX.png" />
+                                <p>Category <br> Brief</p>
+                            </button>
+                        </div>
+                        <div onclick="openCatTab(event, '#CsTCTT','#tab1')">
+                            <button class="tab-button" value="QRA">
+                                <img class="docx-img" src="./images/category/cat-sop.png" />
+                                <h5>Relevant <br>Alcon SOPs </h5>
+                            </button>
+                            <div class="circle">
+                                <span class="down-arrow"></span>
+                            </div>
+                        </div>
+                        <div onclick="openCatTab(event, '#CsTCTT','#tab2')">
+                            <button class="tab-button" value="QRA">
+                                <img class="docx-img" src="./images/CATEGORY_DOX.png" />
+                                <h5>Supporting Documents</h5>
+                            </button>
+                            <div class="circle">
+                                <span class="down-arrow"></span>
+                            </div>
+                        </div>
+                        <div onclick="openCatTab(event, '#CsTCTT','#tab3')">
+                            <button class="tab-button" value="QRA">
+                                <img src="./images/CATEGORY_RESOURCE.png">
+                                <h5>Resources</h5>
+                            </button>
+                            <div class="circle" style="border-color: #2567f5;">
+                                <span class="down-arrow"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-data-show" id="tab1">
+                    <div class="box with-triangle"></div>
+                    <div class="cat-active-wrapper container-wrapper-details">
+                        <div class="cat-active">
+                            <div>
+                                <div class="cat-sop-tag">
+                                    <img src="./images/category/sop-tag.png" alt="" srcset="">
+                                    <h1>SOPs</h1>
+                                </div>
+                                <a href="https://alcon365.sharepoint.com/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs%2FV%2DQMS%2D0060311%20Clinical%20Trial%20Oversight%20v7%2Epdf&viewid=83051f81%2D72de%2D4fcb%2Db131%2Dcf47a1afae6a&parent=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs" target="_blank">V-QMS-0060311 Clinical Trial Oversight SOP</a>
+                                <a href="https://alcon365.sharepoint.com/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs%2FV%2DQMS%2D0060311%20Clinical%20Trial%20Oversight%20v7%2Epdf&viewid=83051f81%2D72de%2D4fcb%2Db131%2Dcf47a1afae6a&parent=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs" target="_blank">V-QMS-0059313 Clinical Trial Protocol and Informed Consent Development and
+                                    Amendment SOP</a>
+                                <a href="https://alcon365.sharepoint.com/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs%2FV%2DQMS%2D0060311%20Clinical%20Trial%20Oversight%20v7%2Epdf&viewid=83051f81%2D72de%2D4fcb%2Db131%2Dcf47a1afae6a&parent=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs" target="_blank">V-QMS-0053567 CORP: Registering Clinical Trials and Posting <br> Results to
+                                    Public Databases SOP</a>
+                                <a href="https://alcon365.sharepoint.com/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs%2FV%2DQMS%2D0060311%20Clinical%20Trial%20Oversight%20v7%2Epdf&viewid=83051f81%2D72de%2D4fcb%2Db131%2Dcf47a1afae6a&parent=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs" target="_blank">V-QMS-0058991 Clinical - Investigator Brochure SOP</a>
+                                <a href="https://alcon365.sharepoint.com/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs%2FV%2DQMS%2D0060311%20Clinical%20Trial%20Oversight%20v7%2Epdf&viewid=83051f81%2D72de%2D4fcb%2Db131%2Dcf47a1afae6a&parent=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs" target="_blank">V-QMS-0057422 Planning, Conduct and Reporting of Feasibility Clinical <br>
+                                    Trials SOP</a>
+                                <a href="https://alcon365.sharepoint.com/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs%2FV%2DQMS%2D0060311%20Clinical%20Trial%20Oversight%20v7%2Epdf&viewid=83051f81%2D72de%2D4fcb%2Db131%2Dcf47a1afae6a&parent=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs" target="_blank">V-QMS-0053650 MSP: Responses to Health Authority <br> Inquiries SOP</a>
+                                <a style="pointer-events: none;border-bottom: none;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-data-show" id="tab2">
+                    <div class="box with-triangle"></div>
+                    <div class="cat-active-wrapper container-wrapper-details">
+                        <div class="cat-active">
+                            <div>
+                                <a style="pointer-events: none;"></a>
+                                <a href="https://alcon365.sharepoint.com/:p:/r/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/General/SOPs/V-CLN-0031947%20Clinical%20Trial%20Lifecycle%20Roadmap.pptx?d=waaceba7273994bc18935e75f94c2b57b&csf=1&web=1&e=IibeZI"  target="_blank">V-CLN-0031947 Clincal Trial Lifecycle Roadmap </a>
+                                <a href="https://alcon365.sharepoint.com/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs%2FV%2DQMS%2D0094371%20Alcon%20Study%20Matrix%2Epdf&parent=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs" target="_blank">V-QMS-0094371 Clinical Development Stages & <br>
+                                    Investigation Types guidance document</a>
+                                <a href="https://alcon365.sharepoint.com/:w:/r/sites/alClinReg/_layouts/15/Doc.aspx?sourcedoc=%7B4A2D4ED0-65B3-47B1-B229-3216B8A7B985%7D&file=Protocol%20Synopsis%20Template_22May2020_v2.docx&action=default&mobileredirect=true&DefaultItemOpen=1" target="_blank">Synopsis Template</a>
+                                <a href="https://alcon365.sharepoint.com/:w:/r/sites/alClinReg/_layouts/15/Doc.aspx?sourcedoc=%7B4A2D4ED0-65B3-47B1-B229-3216B8A7B985%7D&file=Protocol%20Synopsis%20Template_22May2020_v2.docx&action=default&mobileredirect=true&DefaultItemOpen=2" target="_blank">V-CLN-0009971 Assessment of Study Standards
+                                    Template</a>
+                                <a href="https://alcon365.sharepoint.com/:w:/r/sites/alClinReg/_layouts/15/Doc.aspx?sourcedoc=%7B4A2D4ED0-65B3-47B1-B229-3216B8A7B985%7D&file=Protocol%20Synopsis%20Template_22May2020_v2.docx&action=default&mobileredirect=true&DefaultItemOpen=3" target="_blank">V-CLN-0007143 Trial Registration and Results
+                                    Assessment Template </a>
+                                <a href="https://alcon365.sharepoint.com/:b:/r/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/General/PL%20Playbook%20Categories%20-%20Docs/CsT%20CTT/Alcon%20Study%20Matrix-%20Clinical%20Development%20stages%20and%20investigation%20types%20guidance.pdf?csf=1&web=1&e=L6v8nZ" target="_blank">V-QMS-0088682 Use of Alcon Associates in
+                                    Alcon-Sponsored Clinical Trials guidance document</a>
+                                <a style="pointer-events: none;border-bottom: none;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-data-show" id="tab3">
+                    <div class="box with-triangle"></div>
+                    <div class="cat-active-wrapper container-wrapper-details">
+                        <div class="cat-active">
+                            <div>
+                                <a style="pointer-events: none;"></a>
+                                <a href="https://alcon365.sharepoint.com/sites/clntrial/SitePages/NewHome.aspx" target="_blank">Clinical Trial Manual</a>
+                                <a href="" target="_blank">CsT/CTT resources (note these will be updated <br>
+                                    before the end of year)</a>
+                                <a href="https://alcon365.sharepoint.com/sites/alClinReg/PRCRSR/Forms/AllItems.aspx" target="_blank">PRC Home Page/Teams Site</a>
+                                <a href="https://alcon365.sharepoint.com/sites/clntrial/Controlled%20Unprotected%20Document%20Versions/Forms/AllItems.aspx?csf=1&web=1&e=kA4Bc9&cid=6a304312%2D30f0%2D4aa5%2D8a8c%2D8e5c0503eae0&RootFolder=%2Fsites%2Fclntrial%2FControlled%20Unprotected%20Document%20Versions%2FDisclosure%20101&FolderCTID=0x0120004192C7D8C01F1B41956E6CF9595FDE20" target="_blank">Clinical Trial Disclosure/Registration Training</a>
+                                <a style="pointer-events: none;border-bottom: none;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category" id="eumdr">
+                <div class="mid-col-header">
+                    <h3 class="mid-col-header-tag">EU MDR</h3>
+                    <p class="mid-col-header-info"> European Union Medical Device Regulations, known as EUMDR replaces the current EU MDD (Medical Devices Directives) that regulates placing medical devices to the EU Market. All medical device manufacturers including Alcon must comply
+                        with EU MDR requirements to continue to CE mark and sell medical devices in the European Union.
+                    </p>
+                    <!-- <strong class="mid-col-header-info" style="font-size: 20px; font-weight: 800;">For the relevant SOP
+                        and documents click the box below</strong> -->
+                    <strong><strong>Review the category brief below and click  on the respective titles to access the relevant documents</strong></strong>
+                </div>
+                <div class="tab-container-wrapper">
+                    <div class="tab-container">
+                        <div>
+                            <button class="tab-button-tag" value="eumdr">
+                                <img class="docx-img" src="./images/CATEGORY_DOX.png" />
+                                <p>Category <br> Brief</p>
+                            </button>
+                        </div>
+                        <div onclick="openCatTab(event, '#eumdr','#tab1')">
+                            <button class="tab-button" value="eumdr">
+                                <img class="docx-img" src="./images/category/cat-sop.png" />
+                                <h5>Alcon SOPs </h5>
+                            </button>
+                            <div class="circle">
+                                <span class="down-arrow"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="tab-button" value="eumdr" style="cursor: default;">
+                                <img src="./images/CATEGORY_DOX.png">
+                                <h5> <a href="https://alcon365.sharepoint.com/:b:/r/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/General/PL%20Playbook%20Categories%20-%20Docs/EU%20MDR/Team-NB-PositionPaper-BPG-TechnicalDocEU-MDR-2017-745-V2-20230419.pdf?csf=1&web=1&e=QPYVSs" target="_blank" style="cursor: pointer; text-decoration: none;"> Supporting Documents</a> </h5>
+                            </button>
+                            <!-- <div class="circle" style="border-color: #2567f5;">
+                                <span class="down-arrow"></span>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-data-show" id="tab1">
+                    <div class="box with-triangle"></div>
+                    <div class="cat-active-wrapper container-wrapper-details">
+                        <div class="cat-active">
+                            <div>
+                                <div class="cat-sop-tag">
+                                    <img src="./images/category/sop-tag.png" alt="" srcset="">
+                                    <h1>SOPs</h1>
+                                </div>
+                                <a href="https://alcon365.sharepoint.com/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs%2FV%2DQMS%2D0055787%20Clinical%20Literature%20Reviews%20v2%2Epdf&parent=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs" target="_blank">V-QMS-0055787 CORP: Clinical Literature Review SOP</a>
+                                <a href="https://alcon365.sharepoint.com/:p:/r/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/General/SOPs/V-CLN-0031947%20Clinical%20Trial%20Lifecycle%20Roadmap.pptx?d=waaceba7273994bc18935e75f94c2b57b&csf=1&web=1&e=IibeZI" target="_blank">V-QMS-0055121 Postmarket Clinical Follow-up (PMCF) Plan and Report SOP</a>
+                                <a href="https://alcon365.sharepoint.com/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs%2FV%2DQMS%2D0089137%20Confirming%20Sufficient%20Clinical%20Evidence%5FImplementation%20Plan%20v1%2Epdf&parent=%2Fsites%2FCRDPLOn%2DBoardingPlaybook%2FShared%20Documents%2FGeneral%2FSOPs" target="_blank">V-QMS-0089137 Sufficient Clinical Evidence work instruction</a>
+                                <a href="https://alcon365.sharepoint.com/:p:/r/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/General/SOPs/V-CLN-0031947%20Clinical%20Trial%20Lifecycle%20Roadmap.pptx?d=waaceba7273994bc18935e75f94c2b57b&csf=1&web=1&e=IibeZI" target="_blank">V-QMS-0052974 MSP: Preparation and Maintenance of the
+                                    Post- Market Surveillance Plan (PMSP) SOP</a>
+                                <a href="https://alcon365.sharepoint.com/:p:/r/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/General/SOPs/V-CLN-0031947%20Clinical%20Trial%20Lifecycle%20Roadmap.pptx?d=waaceba7273994bc18935e75f94c2b57b&csf=1&web=1&e=IibeZI" target="_blank">V-QMS-0054195 Notified Body Interaction (MDSAP/ISO/ EN ISO
+                                    Registrar/ EU Notified Body) SOP</a>
+                                <a style="pointer-events: none;border-bottom: none;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category" id="pipeline">
+                <div class="mid-col-header">
+                    <h3 class="mid-col-header-tag">Pipeline Teams</h3>
+                    <p class="mid-col-header-info">Introduction to R&D technology platforms, the concept of the <br> core team, supporting product development, and the Alcon <br>stage-gate model.
+                    </p>
+                    PL Role on core team and clinical development planning. <br><br><br>
+                    <strong><strong>Review the category brief below and click  on the respective titles to access the relevant documents</strong></strong>
+
+                </div>
+                <div class="tab-container-wrapper">
+                    <div class="tab-container">
+                        <div>
+                            <button class="tab-button-tag" value="pipeline">
+                                <img class="docx-img" src="./images/CATEGORY_DOX.png" />
+                                <p>Category <br> Brief</p>
+                            </button>
+                        </div>
+                        <div onclick="openCatTab(event, '#pipeline','#tab1')">
+                            <button class="tab-button" value="pipeline">
+                                <img class="docx-img" src="./images/category/cat-sop.png" />
+                                <h5>Relevant <br>Alcon SOPs </h5>
+                            </button>
+                            <div class="circle">
+                                <span class="down-arrow"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="tab-button" value="pipeline" style="cursor: default;">
+                                <img class="docx-img" src="./images/CATEGORY_DOX.png" />
+                                <h5>Supporting Documents</h5>
+                            </button>
+                            <!-- <div class="circle">
+                                <span class="down-arrow"></span>
+                            </div> -->
+                        </div>
+                        <div onclick="openCatTab(event, '#pipeline','#tab3')">
+                            <button class="tab-button" value="pipeline">
+                                <img src="./images/CATEGORY_RESOURCE.png">
+                                <h5>Resources</h5>
+                            </button>
+                            <div class="circle" style="border-color: #2567f5;">
+                                <span class="down-arrow"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-data-show" id="tab1">
+                    <div class="box with-triangle"></div>
+                    <div class="cat-active-wrapper container-wrapper-details">
+                        <div class="cat-active">
+                            <div>
+                                <div class="cat-sop-tag">
+                                    <img src="./images/category/sop-tag.png" alt="" srcset="">
+                                    <h1>SOPs</h1>
+                                </div>
+                                <a href="https://alcon365.sharepoint.com/:b:/r/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/General/SOPs/V%20QMS%200055581%20v12%20QSP%20Design%20Control%20Procedure%20for%20Medical%20Devices.pdf?csf=1&web=1&e=ycjeDS" target="_blank">V-QMS-0055581 QSP: Design Control Procedure for Medical Devices SOP</a>
+                                <a href="https://alcon365.sharepoint.com/:b:/r/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/General/SOPs/V-QMS-0056172%20v8%20MSP%20Alcon%20Medical%20Device%20-%20Design%20Control%20Procedure.pdf?csf=1&web=1&e=s06BW5" target="_blank">V-QMS-0056172 MSP: Alcon Medical Device - Design Control Procedure</a>
+                                <a href="https://alcon365.sharepoint.com/:b:/r/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/General/SOPs/V-QMS-0056172%20v8%20MSP%20Alcon%20Medical%20Device%20-%20Design%20Control%20Procedure.pdf?csf=1&web=1&e=s06BW5" target="_blank">Clinical Development Planning SOPs - Device (V-QMS-0058034) <br>and Pharma
+                                    (coming 2023)</a>
+                                <a href="" target="_blank">Clinical Development Planning Template - Device (V-RIM-0025053)
+                                    and Pharma (coming 2023)</a>
+                                <a href="https://alcon365.sharepoint.com/sites/clntrial/Clinical%20Procedures_1/Forms/AllItems.aspx?id=%2Fsites%2Fclntrial%2FClinical%20Procedures%5F1%2FClinical%20Product%20Lifecycle%20Roadmap%5Fupdate%2002Apr2021%2Epdf&parent=%2Fsites%2Fclntrial%2FClinical%20Procedures%5F1" target="_blank">New Product Development and Lifecycle Management roadmap </a>
+                                <a href="https://alcon365.sharepoint.com/sites/InSight/SitePages/210/New-Member.aspx" target="_blank">New Core Team Member</a>
+                                <a href="https://alcon365.sharepoint.com/:b:/r/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/General/SOPs/V-QMS-0056172%20v8%20MSP%20Alcon%20Medical%20Device%20-%20Design%20Control%20Procedure.pdf?csf=1&web=1&e=s06BW5" target="_blank">V-QMS-0054023 Risk Management - Application to Alcon Medical
+                                    Device Products SOP</a>
+                                <a href="https://alcon365.sharepoint.com/:b:/r/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/General/SOPs/V-QMS-0081766%20v1%20Claims%20Development%20and%20Management.pdf?csf=1&web=1&e=JSoive" target="_blank">V-QMS-0081766 CORP: Claims Development and Management SOP</a>
+                                <a style="pointer-events: none;border-bottom: none;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cat-data-show" id="tab3">
+                    <div class="box with-triangle"></div>
+                    <div class="cat-active-wrapper container-wrapper-details">
+                        <div class="cat-active">
+                            <div>
+                                <a style="pointer-events: none;"></a>
+                                <a href="https://alcon365.sharepoint.com/:b:/r/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/General/SOPs/V%20QMS%200055581%20v12%20QSP%20Design%20Control%20Procedure%20for%20Medical%20Devices.pdf?csf=1&web=1&e=ycjeDS" target="_blank">V-QMS-0055581 QSP: Design Control Procedure for Medical Devices SOP</a>
+                                <a href="https://alcon365.sharepoint.com/:b:/r/sites/CRDPLOn-BoardingPlaybook/Shared%20Documents/General/SOPs/V-QMS-0056172%20v8%20MSP%20Alcon%20Medical%20Device%20-%20Design%20Control%20Procedure.pdf?csf=1&web=1&e=s06BW5" target="_blank">V-QMS-0056172 MSP: Alcon Medical Device - Design Control Procedure</a>
+                                <a href="" target="_blank">Clinical Development Planning SOPs - Device (V-QMS-0058034) and Pharma
+                                    (coming 2023)</a>
+                                <a style="pointer-events: none;border-bottom: none;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="right-col">
+            <div class="choice-details">
+                <p class="feedback"><img src="./images/files.png" alt="" srcset="">Feedback</p>
+                <span></span>
+                <p class="quick-links" onmouseenter="rightColEnter('quick-links','.quick-link-wrapper')"><img src="./images/QuickLink.png" alt="" srcset="">Quick Links</p>
+            </div>
+            <div onmouseleave="rightColLeave('quick-links','.quick-link-wrapper')" class="quick-link-wrapper">
+                <div class="box with-triangle"></div>
+                <div class="quick-link-data">
+                    <a href="https://alcon365.sharepoint.com/sites/InSight/SitePages/119/CR%26D_Home.aspx" target="_blank">CRD insight Page</a>
+                    <a href="https://alcon365.sharepoint.com/sites/InSight/SitePages/119/Clinical%20RD%20Onboarding.aspx" target="_blank">CRD Onboarding site</a>
+                    <a href="https://alcon365.sharepoint.com/sites/InSight/SitePages/161/R%26DApplications.aspx" target="_blank">R&D InSight Page</a>
+                    <a href="https://alcon365.sharepoint.com/sites/InSight/SitePages/363/MVP_Playbook_Version_2/MVP%20GEN2%20Final/MVP_Playbook_M3_GEN2_Home_min.aspx" target="_blank">MVP Playbook</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./JS/Navbar.js"></script>
+    <script src="./JS/Category.js"></script>
+
+</body>
+
+</html>
